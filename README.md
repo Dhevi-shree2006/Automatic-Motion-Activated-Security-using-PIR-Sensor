@@ -11,7 +11,7 @@ To detect motion using a PIR sensor connected to an Arduino and trigger an LED (
 6.	Jumper wires – As required
 7.	USB Cable – 1 No (for uploading code and powering Arduino)
 8.	Computer with Tinkercad or Arduino IDE installed
-
+9.	
 ## Theory:
 
 Passive Infrared (PIR) sensors are electronic devices that detect motion by sensing infrared radiation emitted by objects. Every object with a temperature above absolute zero emits infrared radiation. The PIR sensor detects this radiation and can sense motion when a warm object, such as a human body, passes within its detection range. The sensor contains a pair of pyroelectric sensors housed under a Fresnel lens, which focuses the infrared signals onto the sensor surface. When the infrared levels change rapidly between the two pyroelectric sensors—such as when a person walks by—the sensor outputs a HIGH signal indicating motion detection.
