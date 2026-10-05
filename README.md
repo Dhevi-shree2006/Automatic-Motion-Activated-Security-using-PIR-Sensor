@@ -61,27 +61,27 @@ Step 7: Save Your Work
 
 # Code:
 ```
+int pirPin = 2;
 int ledPin = 13;
-int inPin = 7;
 
-void setup() {
-  Serial.begin(9600);
+void setup()
+{
+  pinMode(pirPin, INPUT);
   pinMode(ledPin, OUTPUT);
-  pinMode(inPin, INPUT);
 }
 
-void loop() {
-  int val = digitalRead(inPin);
+void loop()
+{
+  int motion = digitalRead(pirPin);
 
-  if (val == HIGH) {
+  if (motion == HIGH)
+  {
     digitalWrite(ledPin, HIGH);
-    Serial.println("Motion Detected");
-  } else {
-    digitalWrite(ledPin, LOW);
-    Serial.println("No Motion");
   }
-
-  delay(100);
+  else
+  {
+    digitalWrite(ledPin, LOW);
+  }
 }
 
 ```
